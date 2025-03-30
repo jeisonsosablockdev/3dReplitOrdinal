@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { ConnectButton } from "@/components/wallet/connect-button";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { CubeIcon, Globe, Sun, Moon } from "lucide-react";
+import { Box, Globe, Sun, Moon } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/components/theme-provider";
 
@@ -25,7 +25,7 @@ export function Navbar() {
             <div className="flex-shrink-0 flex items-center">
               <Link href="/">
                 <a className="flex items-center">
-                  <CubeIcon className="h-8 w-8 text-primary" />
+                  <Box className="h-8 w-8 text-primary" />
                   <span className="ml-2 text-xl font-bold">3D Ordinal Minter</span>
                   <span className="ml-1 text-xs text-primary font-semibold">BSV</span>
                 </a>

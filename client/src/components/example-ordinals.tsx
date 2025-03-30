@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useQuery } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { ThreeDArtifact } from "@shared/schema";
-import { CubeIcon, ExternalLink } from "lucide-react";
+import { Box, ExternalLink } from "lucide-react";
 
 export function ExampleOrdinals() {
   const { t } = useTranslation();
@@ -66,7 +66,7 @@ export function ExampleOrdinals() {
           <Card key={example.id} className="bg-secondary-light overflow-hidden border-none shadow-md">
             <div className="h-48 bg-secondary relative">
               <div className="absolute inset-0 flex items-center justify-center">
-                <CubeIcon className="h-12 w-12 text-gray-700" />
+                <Box className="h-12 w-12 text-gray-700" />
               </div>
             </div>
             <CardContent className="p-4">

@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { useTranslation } from "react-i18next";
-import { CubeIcon } from "lucide-react";
+import { Box } from "lucide-react";
 import { FaTwitter, FaGithub, FaDiscord } from "react-icons/fa";
 
 export function Footer() {
@@ -13,7 +13,7 @@ export function Footer() {
           <div className="flex items-center">
             <Link href="/">
               <a className="flex items-center">
-                <CubeIcon className="h-8 w-8 text-primary" />
+                <Box className="h-8 w-8 text-primary" />
                 <span className="ml-2 text-xl font-bold">3D Ordinal Minter</span>
                 <span className="ml-1 text-xs text-primary font-semibold">BSV</span>
               </a>
