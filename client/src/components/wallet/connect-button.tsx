@@ -22,15 +22,14 @@ export function ConnectButton() {
     <>
       {isConnected ? (
         <div className="flex items-center gap-2">
-          <div className="hidden md:flex items-center px-3 py-1.5 rounded-md bg-indigo-900/30 border border-indigo-800/50 text-sm text-indigo-200 font-medium">
-            <div className="h-2 w-2 rounded-full bg-green-400 mr-2 animate-pulse"></div>
+          <div className="hidden md:block text-sm text-gray-400 mr-2">
             {formatAddress(walletAddress)}
           </div>
           <Button 
             variant="destructive" 
             size="sm" 
             onClick={disconnect}
-            className="bg-gradient-to-r from-rose-700 to-red-700 hover:from-rose-800 hover:to-red-800 text-white shadow-lg shadow-red-900/20 border-0"
+            className="bg-red-700 hover:bg-red-800"
           >
             <Power className="h-4 w-4 mr-2" />
             {t("wallet.disconnect")}
@@ -39,14 +38,10 @@ export function ConnectButton() {
       ) : (
         <Button
           onClick={openModal}
-          size="sm"
-          className="relative overflow-hidden bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white shadow-lg shadow-indigo-900/30 border-0"
+          className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md shadow-sm text-black bg-primary hover:bg-primary-600 focus:outline-none"
         >
-          <span className="relative z-10 flex items-center font-medium">
-            {t("wallet.connect")}
-            <Wallet className="ml-2 h-4 w-4" />
-          </span>
-          <span className="absolute inset-0 bg-white/10 blur-sm opacity-0 group-hover:opacity-100 transition-opacity"></span>
+          <span>{t("wallet.connect")}</span>
+          <Wallet className="ml-2 h-4 w-4" />
         </Button>
       )}
       
