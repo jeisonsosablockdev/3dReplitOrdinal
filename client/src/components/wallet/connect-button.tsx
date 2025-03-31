@@ -7,7 +7,7 @@ import { Wallet, Power } from "lucide-react";
 
 export function ConnectButton() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const { isConnected, walletAddress, disconnect } = useWallet();
+  const { isConnected, walletAddress, disconnect, isWalletInstalled } = useWallet();
   const { t } = useTranslation();
 
   const openModal = () => setIsModalOpen(true);

@@ -19,9 +19,18 @@ const enTranslations = {
     connected_description: "Your wallet has been successfully connected.",
     disconnected: "Wallet Disconnected",
     disconnected_description: "Your wallet has been disconnected.",
+    not_installed: {
+      title: "Wallet Not Installed",
+      description: "Yours Wallet extension is not installed. Please install it to continue.",
+      message: "Yours Wallet extension is not installed in your browser.",
+      install: "Install Yours Wallet"
+    },
+    visit_website: "Visit Website",
     error: {
       title: "Connection Error",
-      description: "Failed to connect to wallet. Please try again."
+      description: "Failed to connect to wallet. Please try again.",
+      disconnect_title: "Disconnect Error",
+      disconnect_description: "Failed to disconnect wallet. Please try again."
     },
     modal: {
       title: "Connect Your Wallet",
@@ -151,9 +160,18 @@ const esTranslations = {
     connected_description: "Tu cartera ha sido conectada con éxito.",
     disconnected: "Cartera Desconectada",
     disconnected_description: "Tu cartera ha sido desconectada.",
+    not_installed: {
+      title: "Cartera No Instalada",
+      description: "La extensión Yours Wallet no está instalada. Por favor, instálala para continuar.",
+      message: "La extensión Yours Wallet no está instalada en tu navegador.",
+      install: "Instalar Yours Wallet"
+    },
+    visit_website: "Visitar Sitio Web",
     error: {
       title: "Error de Conexión",
-      description: "No se pudo conectar a la cartera. Por favor, inténtalo de nuevo."
+      description: "No se pudo conectar a la cartera. Por favor, inténtalo de nuevo.",
+      disconnect_title: "Error al Desconectar",
+      disconnect_description: "No se pudo desconectar la cartera. Por favor, inténtalo de nuevo."
     },
     modal: {
       title: "Conecta tu Cartera",
