@@ -11,12 +11,10 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex items-center">
-            <Link href="/">
-              <a className="flex items-center">
-                <Box className="h-8 w-8 text-primary" />
-                <span className="ml-2 text-xl font-bold">3D Ordinal Minter</span>
-                <span className="ml-1 text-xs text-primary font-semibold">BSV</span>
-              </a>
+            <Link href="/" className="flex items-center">
+              <Box className="h-8 w-8 text-primary" />
+              <span className="ml-2 text-xl font-bold">3D Ordinal Minter</span>
+              <span className="ml-1 text-xs text-primary font-semibold">BSV</span>
             </Link>
           </div>
           <div className="mt-8 md:mt-0">
@@ -38,14 +36,14 @@ export function Footer() {
         </div>
         <div className="mt-8 border-t border-gray-800 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
-            <Link href="/terms">
-              <a className="text-sm text-gray-400 hover:text-white">{t("footer.terms")}</a>
+            <Link href="/terms" className="text-sm text-gray-400 hover:text-white">
+              {t("footer.terms")}
             </Link>
-            <Link href="/privacy">
-              <a className="text-sm text-gray-400 hover:text-white">{t("footer.privacy")}</a>
+            <Link href="/privacy" className="text-sm text-gray-400 hover:text-white">
+              {t("footer.privacy")}
             </Link>
-            <Link href="/contact">
-              <a className="text-sm text-gray-400 hover:text-white">{t("footer.contact")}</a>
+            <Link href="/contact" className="text-sm text-gray-400 hover:text-white">
+              {t("footer.contact")}
             </Link>
           </div>
           <p className="mt-8 text-sm text-gray-400 md:mt-0 md:order-1">

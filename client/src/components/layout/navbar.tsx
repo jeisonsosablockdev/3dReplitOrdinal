@@ -23,12 +23,10 @@ export function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/">
-                <a className="flex items-center">
-                  <Box className="h-8 w-8 text-primary" />
-                  <span className="ml-2 text-xl font-bold">3D Ordinal Minter</span>
-                  <span className="ml-1 text-xs text-primary font-semibold">BSV</span>
-                </a>
+              <Link href="/" className="flex items-center">
+                <Box className="h-8 w-8 text-primary" />
+                <span className="ml-2 text-xl font-bold">3D Ordinal Minter</span>
+                <span className="ml-1 text-xs text-primary font-semibold">BSV</span>
               </Link>
             </div>
           </div>
